@@ -11,7 +11,7 @@ const Old = () => {
         <div className='over'>
             <div className='max-w-[700px] m-auto text-center py-32'>
                 <h1 className='text-white tracking-[0px] uppercase text-[80px]'>Lynn Al Agilly</h1>
-                <h5 className='text-white tracking-[4px] uppercase text-[18px]'>Space Engineering Student | Web Developer</h5>
+                <h5 className='text-white tracking-[3px] uppercase text-[17px]'>Space Engineering Student | Front-End Developer</h5>
                 {/* <div className='m-auto py-5 grid-cols-4 grid items-center justify-center links'>
                     <a href='#'><FontAwesomeIcon icon={faSquareGithub} size="2xl" /></a>
                     <a href='#'><FontAwesomeIcon icon={faLinkedin} size="2xl" /></a>
@@ -34,8 +34,13 @@ const Old = () => {
                     <a href=''>Experience</a>
                     <a href=''>Projects</a>
                     <a href=''>Contact</a>
-                    {/* <a href=''>View Resume</a> */}
                 </div>
+                {/* <div className='px-10 m-auto py-5 flex gap-16 items-right justify-end center text-center'>
+                    <a href=''>About</a>
+                    <a href=''>Experience</a>
+                    <a href=''>Projects</a>
+                    <a href=''>Contact</a>
+                </div> */}
             </div>
         </div>
     </div>
@@ -65,54 +70,10 @@ const Old = () => {
         </div>
     </div>
     <div className='max-w-[1140px] border m-auto grid grid-cols-3 my-32'>
-        <div className='col-span-2'> hello</div>
-        <div className=''>
-            <div className='skill'>
-                <h4>
-                    Languages
-                </h4>
-                <ul>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>HTML + CSS</li>
-                </ul>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Frameworks
-                </h4>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Tools & Technologies
-                </h4>
-            </div>
-        </div>
+
     </div>
     <div className='max-w-[1140px] border m-auto grid grid-cols-3 my-32'>
-        <div className='col-span-2'> hello</div>
-        <div className=''>
-            <div className='skill'>
-                <h4>
-                    Languages
-                </h4>
-                <ul>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>HTML + CSS</li>
-                </ul>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Frameworks
-                </h4>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Tools & Technologies
-                </h4>
-            </div>
-        </div>
+        Hello
     </div>
 </>
     )

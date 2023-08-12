@@ -134,3 +134,12 @@ font-weight: 400;
   color: var(--midblue);
   font-weight: 900;
 }
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #fff; }
+}
