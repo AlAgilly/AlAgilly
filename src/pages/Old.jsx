@@ -1,8 +1,8 @@
 import React from 'react'
 import {linkedin} from '../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faSquareEnvelope, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter, faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNode, faNodeJs, faAws, faDigitalOcean } from '@fortawesome/free-brands-svg-icons'
+import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 const Old = () => {
   return (
@@ -44,28 +44,31 @@ const Old = () => {
             </div>
         </div>
     </div>
-    <div className='max-w-[1140px] border m-auto grid grid-cols-3 my-32'>
+    <div className='max-w-[1140px] m-auto grid grid-cols-3 my-32'>
         <div className='col-span-2'> hello</div>
         <div className=''>
             <div className='skill'>
                 <h4>
-                    Languages
+                    Tech Stack
                 </h4>
-                <ul>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>HTML + CSS</li>
-                </ul>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Frameworks
-                </h4>
-            </div>
-            <div className='skill'>
-                <h4>
-                    Tools & Technologies
-                </h4>
+  
+                <p className='lang'><FontAwesomeIcon icon={faJsSquare} size="lg" />&nbsp;JavaScript</p>
+                <p className='lang'><FontAwesomeIcon icon={faJava} size="lg" />&nbsp;Java</p>
+                <p className='lang'><FontAwesomeIcon icon={faHtml5} size="lg" />&nbsp;HTML</p>
+                <p className='lang'><FontAwesomeIcon icon={faCss3} size="lg" />&nbsp;CSS</p>
+                <p className='lang'><FontAwesomeIcon icon={faPython} size="lg" />&nbsp;Python</p>
+                <p className='lang'><FontAwesomeIcon icon={faChartLine} size="lg" />&nbsp;MATLAB</p>
+              
+
+                <p className='framework'><FontAwesomeIcon icon={faReact} size="lg" />&nbsp;React</p>
+                <p className='framework'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;NodeJS</p>
+                <p className='framework'><FontAwesomeIcon icon={faE} size="lg" />&nbsp;Express</p>
+
+                <p className='tech'><FontAwesomeIcon icon={faLinux} size="lg" />&nbsp;Linux</p>
+                <p className='tech'><FontAwesomeIcon icon={faGit} size="lg" />&nbsp;Git</p>
+                <p className='tech'><FontAwesomeIcon icon={faDatabase} size="lg" />&nbsp;MongoDB</p>
+                <p className='tech'><FontAwesomeIcon icon={faAws} size="lg" />&nbsp;AWS</p>
+                <p className='tech'><FontAwesomeIcon icon={faDigitalOcean} size="lg" />&nbsp;Digital Ocean</p>
             </div>
         </div>
     </div>
