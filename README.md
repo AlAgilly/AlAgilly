@@ -11,42 +11,35 @@ I have a huge passion for learning new skills; from unfamiliar programming langu
 ### 🛠 &nbsp;Tech Stack
 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=for-the-badge&logo=python)&nbsp;
-![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
-![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518)&nbsp;
-![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
-![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)&nbsp;
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap&logoColor=563D7C)&nbsp;
-![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
-![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
-![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
-![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
-![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)&nbsp;
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
-![RStudio](https://img.shields.io/badge/-RStudio-05122A?style=flat&logo=rstudio)&nbsp;
-![Eclipse](https://img.shields.io/badge/-Eclipse-05122A?style=flat&logo=eclipse-ide&logoColor=2C2255)&nbsp;
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white)&nbsp;
-![DiscordJS](https://img.shields.io/badge/discord.js-%232C3454.svg?style=for-the-badge&logo=Discord&logoColor=white)&nbsp;
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)&nbsp;
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)&nbsp;
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)&nbsp;
-![Portainer](https://img.shields.io/badge/Portainer-%230072C6.svg?style=for-the-badge&logo=Portainer&logoColor=white)&nbsp;
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)&nbsp;
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)&nbsp;
-![Vult](https://img.shields.io/badge/vultr-%23039BE5.svg?style=for-the-badge&logo=vultr)&nbsp;
-![Apache](https://img.shields.io/badge/apache-%23039BE5.svg?style=for-the-badge&logo=apache&logoColor=white)&nbsp;
-![NodeJS](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)&nbsp;
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)&nbsp;
-![Visual Studio](https://img.shields.io/badge/VisualStudio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)&nbsp;
-![NPM](https://img.shields.io/badge/NPM-%23121011.svg?style=for-the-badge&logo=npm&logoColor=white)&nbsp;
-![Visual Studio Code](https://img.shields.io/badge/VisualStudioCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)&nbsp;
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%23121011.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=for-the-badge&logo=javascript)&nbsp;
+![Java](https://img.shields.io/badge/-Java-05122A?style=for-the-badge&logo=Java&logoColor=FFA518)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=for-the-badge&logo=react)&nbsp;
+![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=for-the-badge&logo=node.js)&nbsp;
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-05122A?style=for-the-badge&logo=bootstrap&logoColor=563D7C)&nbsp;
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=for-the-badge&logo=HTML5)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-05122A?style=for-the-badge&logo=CSS3&logoColor=1572B6)&nbsp;
+![Git](https://img.shields.io/badge/-Git-05122A?style=for-the-badge&logo=git)&nbsp;
+![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=for-the-badge&logo=github)&nbsp;
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)&nbsp;
+![Express.js](https://img.shields.io/badge/express.js-05122A?style=for-the-badge&logo=express)&nbsp;
+![DiscordJS](https://img.shields.io/badge/discord.js-05122A?style=for-the-badge&logo=Discord)&nbsp;
+![Bootstrap](https://img.shields.io/badge/bootstrap-05122A?style=for-the-badge&logo=bootstrap)&nbsp;
+![MongoDB](https://img.shields.io/badge/MongoDB-05122A?style=for-the-badge&logo=mongodb)&nbsp;
+![MySQL](https://img.shields.io/badge/mysql-05122A?style=for-the-badge&logo=mysql)&nbsp;
+![Docker](https://img.shields.io/badge/docker-05122A?style=for-the-badge&logo=docker)&nbsp;
+![AWS](https://img.shields.io/badge/AWS-05122A?style=for-the-badge&logo=amazon-aws)&nbsp;
+![Apache](https://img.shields.io/badge/apache-05122A?style=for-the-badge&logo=apache)&nbsp;
+![GitHub](https://img.shields.io/badge/github-05122A?style=for-the-badge&logo=github)&nbsp;
+![Ubuntu](https://img.shields.io/badge/Ubuntu-05122A?style=for-the-badge&logo=ubuntu)&nbsp;
+![Visual Studio](https://img.shields.io/badge/VisualStudio-05122A?style=for-the-badge&logo=visual-studio)&nbsp;
+![NPM](https://img.shields.io/badge/NPM-05122A?style=for-the-badge&logo=npm)&nbsp;
+![Visual Studio Code](https://img.shields.io/badge/VisualStudioCode-05122A?style=for-the-badge&logo=visual-studio-code)&nbsp;
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-05122A?style=for-the-badge&logo=digitalOcean)&nbsp;
 
 
 ### ⚙️ &nbsp;GitHub Analytics
 
-<p align="center">
+<p align="left">
 <a href="https://github.com/AlAgilly">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=alagilly&layout=compact&langs_count=8&theme=algolia"/>
 </a>
@@ -55,4 +48,5 @@ I have a huge passion for learning new skills; from unfamiliar programming langu
 ### 🤝🏻 &nbsp;Connect with Me
 
 <a href="https://www.linkedin.com/in/lynnalagilly/">![Linkedin](https://img.shields.io/badge/Linkedin-05122A?style=for-the-badge&logo=Linkedin&logoColor=white)</a>
-</a> ![Discord](https://img.shields.io/badge/alagilly-05122A?style=for-the-badge&logo=discord&logoColor=white)
+![Discord](https://img.shields.io/badge/alagilly-05122A?style=for-the-badge&logo=discord&logoColor=white)
+<a href="https://alagilly.dev">![Website](https://img.shields.io/badge/alagilly.dev-05122A?style=for-the-badge&logoColor=white)</a>
