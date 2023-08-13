@@ -91,7 +91,17 @@ font-weight: 400;
   z-index: 10;
   transition: 0.3s ease-in-out;
 }
-
+.smol .butt{
+  padding: 5px 10px;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+  font-size: 13px;
+}
+.butti{
+  z-index: 27;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #000;
+}
 .buttc{
   padding: 10px;
   z-index: 10;
@@ -130,6 +140,14 @@ font-weight: 400;
   transition: .3s ease-in-out;
 }
 .butt:hover .border1, .butt:hover .border2{
+  width: 100%;
+  height: 100%;
+  width: 40px;
+  height: 20px;
+  /* width: calc(100% + 5px);
+  height: calc(100% + 5px); */
+}
+.butti:hover .border1, .butti:hover .border2{
   width: 100%;
   height: 100%;
   width: 40px;
@@ -245,6 +263,21 @@ font-weight: 400;
   font-size: 20px;
   letter-spacing: 2px;
 }
+.tit h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
 .tit h5 {
   color: #999;
+}
+
+.im2 {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.butti:hover .im2 {
+  opacity: 1;
 }
