@@ -1,10 +1,10 @@
 import React from 'react'
-import { github, screenshot1, screenshot2 } from '../assets'
+import { github, screenshot1, screenshot2, screenshot3, screenshot4 } from '../assets'
 import {Link, NavLink, useLocation} from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter, faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNode, faNodeJs, faAws, faDigitalOcean } from '@fortawesome/free-brands-svg-icons'
-import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter, faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNode, faNodeJs, faAws, faDigitalOcean, faVuejs, faJira } from '@fortawesome/free-brands-svg-icons'
+import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare, faCutlery, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import HoverImage from '../components/HoverImage'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 
@@ -151,8 +151,79 @@ const Home = () => {
         <div className='text-center tit pb-10'>
           <h2>Work Experience</h2>
         </div>
-        <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10'>
-
+        <div className='max-w-[800px] m-auto pb-16'>
+        <div className='tit smol col-span-3 items-center'>
+        <h3>Manitoulin Transport</h3>
+        <h4>Web and Mobile Development Intern</h4>
+            <div className='divider w-full h-[1px] pb-3'></div>
+        <ul>
+        <li className='flex items-center'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
+        <li className='flex items-center'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
+        <li className='flex items-center'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
+       </ul>
+        <h5 className='py-3'>Tech Stack</h5>
+            <div className='flex-wrap flex m-auto gap-2'>
+            <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faVuejs} size="lg" />&nbsp;&nbsp;VueJS</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faJsSquare} size="lg"/>&nbsp;&nbsp;JavaScript</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;&nbsp;NodeJS</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faDatabase} size="lg" />&nbsp;&nbsp;mySQL</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faHtml5} size="sm" />&nbsp;&nbsp;HTML</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faCss3} size="sm" />&nbsp;&nbsp;CSS</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faJira} size="sm" />&nbsp;&nbsp;Jira</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faGit} size="sm" />&nbsp;&nbsp;Git</p>
+              </div>
+            </div>
+        </div> </div>
+        <div className='max-w-[800px] m-auto pb-16'>
+        <div className='tit smol col-span-3 items-center'>
+            <h3>York Gaming & Esports Website</h3>
+            <div className='divider w-full h-[1px]'></div></div>
+        <ul>
+        <li>- hi</li>
+        <li>- hi</li>
+        <li>- hi</li>
+        </ul>
+        </div>
+        <div className='max-w-[800px] m-auto'>
+        <div className='tit smol col-span-3 items-center'>
+            <h3>York Gaming & Esports Website</h3>
+            <div className='divider w-full h-[1px]'></div></div>
+        <ul>
+        <li>- hi</li>
+        <li>- hi</li>
+        <li>- hi</li>
+        </ul>
         </div>
       </div>
       <div className='divider w-1/3 h-[1px] m-auto mb-4'></div>
@@ -160,9 +231,9 @@ const Home = () => {
         <div className='text-center tit pb-10'>
           <h2>My Projects and Work</h2>
         </div>
-        <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10 items-center pb-16'>
-          <div className='col-span-2'>
-            <div className='relative butti'>
+        <div className='max-w-[1000px] m-auto grid mm:grid-cols-5 grid-cols-1 gap-10 items-center pb-12'>
+          <div className='mm:col-span-2 col-span-1 '>
+            <div className='relative butti m-auto w-full'>
               <img src={screenshot1} alt="" className='im2'/>
               <img src={screenshot2} alt="" className='im1'/>
             </div>
@@ -170,7 +241,7 @@ const Home = () => {
           <div className='tit smol col-span-3 items-center'>
             <h3>York Gaming & Esports Website</h3>
             <div className='divider w-full h-[1px]'></div>
-            <p className='py-3 text-[15px]'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
+            <p className='py-3 text-[15px]'>This website was created for my school&apos;s gaming and esports club. It functions as a centralized platform to view events, team/player details, and other ways to get involved with the club; all seamlessly synced and updated directly from the club&apos;s Notion workspace.</p>
             <h4>Tech Stack</h4>
             <div className='flex-wrap flex m-auto gap-2 py-3'>
               <div className='relative butt'>
@@ -225,13 +296,13 @@ const Home = () => {
               </div>
             </div>
           <div className='flex my-3'>
-            <div><FontAwesomeIcon icon={faLink} size="sm" /><a href="" className='link mr-5 ml-2'>Live Website</a></div>|
-            <div><FontAwesomeIcon icon={faCode} size="sm" className='ml-5'/><a href="" className='link mr-5 ml-2'>Code</a></div>|
+            <div><FontAwesomeIcon icon={faLink} size="sm" /><a href="" className='link mr-5 ml-2'>See Live</a></div>|
+            <div><FontAwesomeIcon icon={faCode} size="sm" className='ml-5'/><a href="" className='link mr-5 ml-2'>Source Code</a></div>|
             <div><FontAwesomeIcon icon={faFileLines} size="sm" className='ml-5'/><a href="" className='link mr-5 ml-2'>Documentation</a></div>
           </div>
         </div>
       </div>
-      {/* <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10 items-center pb-16'>
+      <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10 items-center pb-16'>
         <div className='col-span-2'>
           <div className='relative butti'>
             <img src={screenshot1} alt="" className='im2'/>
@@ -239,7 +310,7 @@ const Home = () => {
           </div>
         </div>
         <div className='tit smol col-span-3 items-center'>
-          <h3>Webfilms | Netflix clone</h3>
+          <h3>Netflix clone</h3>
           <div className='divider w-full h-[1px]'></div>
           <p className='py-3 text-[15px]'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
           <h4>Tech Stack</h4>
@@ -296,7 +367,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10 items-center pb-16'>
+      {/* <div className='max-w-[1000px] m-auto grid grid-cols-5 gap-10 items-center pb-16'>
         <div className='col-span-2'>
           <div className='relative butti'>
             <img src={screenshot1} alt="" className='im2'/>
@@ -361,14 +432,14 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className='max-w-[1000px] m-auto grid grid-cols-3 gap-10 items-start'>
-<div>
+      <div className='max-w-[1000px] m-auto grid grid-cols-3 gap-10 items-start giddy'>
+          <div>
           <div className='relative butti'>
             <img src={screenshot1} alt="" className='im2'/>
             <img src={screenshot2} alt="" className='im1'/>
           </div>
-          <div className='tit smol items-center'>
-            <h3>Barker | Twitter clone</h3>
+          <div className='tit smol items-center pt-3'>
+            <h3 className='text-centerg'>Netflix clone</h3>
             <div className='divider w-full h-[1px]'></div>
             <p className='py-3 text-[15px]'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
             <h4>Tech Stack</h4>
@@ -411,11 +482,6 @@ const Home = () => {
               <div className='relative butt'>
                 <div className='border1'></div>
                 <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDigitalOcean} size="sm" />&nbsp;Digital Ocean</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
                 <p className='buttcode'><FontAwesomeIcon icon={faGit} size="sm" />&nbsp;Git</p>
               </div>
             </div>
@@ -430,70 +496,10 @@ const Home = () => {
             <img src={screenshot1} alt="" className='im2'/>
             <img src={screenshot2} alt="" className='im1'/>
           </div>
-          <div className='tit smol items-center'>
-            <h3>Barker | Twitter clone</h3>
+          <div className='tit smol items-center pt-3'>
+            <h3 className='text-centerg'>Twitter clone</h3>
             <div className='divider w-full h-[1px]'></div>
-            <div className='flex justify-start py-3 items-center'>
-              <FontAwesomeIcon icon={faLink} size="sm" /><a href="" className='link mr-5 ml-2'>Demo</a>|
-              <FontAwesomeIcon icon={faCode} size="sm" className='ml-5'/><a href="" className='link mr-5 ml-2'>Code</a>
-            </div>
-            <div className='flex-wrap flex m-auto gap-2 py-3'>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faJsSquare} size="lg"/>&nbsp;JavaScript</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faReact} size="lg" />&nbsp;React</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;NodeJS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faE} size="lg" />&nbsp;Express</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDatabase} size="sm" />&nbsp;MongoDB</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faHtml5} size="sm" />&nbsp;html</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faCss3} size="sm" />&nbsp;css</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDigitalOcean} size="sm" />&nbsp;Digital Ocean</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faGit} size="sm" />&nbsp;Git</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className='relative butti'>
-            <img src={screenshot1} alt="" className='im2'/>
-            <img src={screenshot2} alt="" className='im1'/>
-          </div>
-          <div className='tit smol'>
-            <h3>Barker | Twitter clone</h3>
-            <div className='divider w-full h-[1px]'></div>
+            <p className='py-3 text-[15px]'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
             <h4>Tech Stack</h4>
             <div className='flex-wrap flex m-auto gap-2 py-3'>
               <div className='relative butt'>
@@ -534,7 +540,60 @@ const Home = () => {
               <div className='relative butt'>
                 <div className='border1'></div>
                 <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDigitalOcean} size="sm" />&nbsp;Digital Ocean</p>
+                <p className='buttcode'><FontAwesomeIcon icon={faGit} size="sm" />&nbsp;Git</p>
+              </div>
+            </div>
+            <div className='inline justify-start'>
+              <FontAwesomeIcon icon={faLink} size="sm" /><a href="" className='link mr-5 ml-2'>Demo</a>|
+              <FontAwesomeIcon icon={faCode} size="sm" className='ml-5'/><a href="" className='link mr-5 ml-2'>Code</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className='relative butti'>
+            <img src={screenshot3} alt="" className='im2'/>
+            <img src={screenshot4} alt="" className='im1'/>
+          </div>
+          <div className='tit smol items-center pt-3'>
+            <h3 className='text-centerg'>Spotify clone</h3>
+            <div className='divider w-full h-[1px]'></div>
+            <p className='py-3 text-[15px]'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
+            <h4>Tech Stack</h4>
+            <div className='flex-wrap flex m-auto gap-2 py-3'>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faJsSquare} size="lg"/>&nbsp;JavaScript</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faReact} size="lg" />&nbsp;React</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;NodeJS</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faE} size="lg" />&nbsp;Express</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faDatabase} size="sm" />&nbsp;MongoDB</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faHtml5} size="sm" />&nbsp;html</p>
+              </div>
+              <div className='relative butt'>
+                <div className='border1'></div>
+                <div className='border2'></div>
+                <p className='buttcode'><FontAwesomeIcon icon={faCss3} size="sm" />&nbsp;css</p>
               </div>
               <div className='relative butt'>
                 <div className='border1'></div>
@@ -561,10 +620,10 @@ const Home = () => {
     </div>
       <nav className='m-auto justify-self-auto text-center py-5 w-full flex justify-end items-center'>
       <p className='items-center font-light text-[#000] pl-20'>Made and designed with ♡ by <Link to="/" classname='font-medium'>Lynn Al Agilly</Link></p>
-      <ul className='list-none xm:flex hidden justify-end items-center flex-1 gap-7 pr-20'>
-          <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Terms & Conditions</NavLink></li>
-          <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Contact</NavLink></li>
-      </ul>
+      <div className='list-none xm:flex hidden justify-end items-center flex-1 gap-7 pr-20 fott'>
+          <NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Terms & Conditions</NavLink>
+          <NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Contact</NavLink>
+      </div>
       </nav>
     </div>
   )
