@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNodeJs, faAws, faDigitalOcean, faVuejs, faJira } from '@fortawesome/free-brands-svg-icons'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare, faDatabase, faE } from '@fortawesome/free-solid-svg-icons'
 
 const SIZES = ['medium', 'large'];
 
@@ -28,7 +28,7 @@ const Code = ({
             icon = faNodeJs;
             break;
         case 'Express':
-            icon = faHtml5;
+            icon = faE;
             break;
         case 'CSS':
             icon = faCss3;
@@ -43,7 +43,7 @@ const Code = ({
             icon = faJava;
             break;
         case 'MongoDB':
-            icon = faJsSquare;
+            icon = faDatabase;
             break;
         case 'AWS':
             icon = faAws;
@@ -55,10 +55,13 @@ const Code = ({
             icon = faJira;
             break;
         case 'MySQL':
-            icon = faHtml5;
+            icon = faDatabase;
             break;
         case 'VueJS':
             icon = faVuejs;
+            break;
+        case 'Linux':
+            icon = faLinux;
             break;
         default:
             icon = language.includes('API') ? faArrowUpRightFromSquare : '';
@@ -68,7 +71,7 @@ const Code = ({
         <div className={`relative ${checkButtonSize == 'medium' ? 'butt': 'butt'}`}>
             <div className='border1'></div>
             <div className='border2'></div>
-            <p className='buttcode'><FontAwesomeIcon icon={icon} size={`${icon == faArrowUpRightFromSquare ? 'sm' : 'lg'}`}/>&nbsp;&nbsp;{language}</p>
+            <p><FontAwesomeIcon icon={icon} size={`${icon == faArrowUpRightFromSquare ? 'sm' : 'lg'}`}/><span className={`${icon ? 'flex-inline' : 'hidden'}`}>&nbsp;&nbsp;</span>{language}</p>
         </div>
     )
 }

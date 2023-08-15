@@ -8,7 +8,10 @@ import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faC
 import HoverImage from '../components/HoverImage'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import Projects from '../components/Projects'
-import { projects } from '../constants'
+import { fullstack, projects, works } from '../constants'
+import Code from '../components/Code'
+import Work from '../components/Work'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
     // Mobile nav toggle
@@ -21,20 +24,9 @@ const Home = () => {
     const splitLocation = pathname.split("/");
   
   //active link
-  const active = "activenav"
-  const normal = ""
   return (
     <div className='App'>
-      <nav className='navv m-auto justify-self-auto text-center py-5 sticky top-0 border-b-[1px] border-[#666] z-50 w-full flex justify-end items-center'>
-        <Link to="/" className='items-center text-[20px] font-light text-[#888] pl-20'><span className=' text-[#000]'>AlAgilly</span>.dev</Link>
-        <ul className='list-none xm:flex hidden justify-end items-center flex-1 gap-7 pr-20'>
-            <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>About</NavLink></li>
-            <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Experience</NavLink></li>
-            <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Projects</NavLink></li>
-            <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Contact</NavLink></li>
-            <li><NavLink to="/" className={`link ${({ isActive }) => isActive ? active : normal}`}>Resume</NavLink></li>
-        </ul>
-      </nav>
+      <Navbar/>
       <div className='max-w-[1000px] m-auto justify-self-auto text-center items-center pt-20 pb-24'>
         <h1 className='text-[70px] font-thin'>Lynn Al Agilly</h1>
         <h3 className='pt-3'>Space Engineering Student | Web Developer</h3>
@@ -70,71 +62,9 @@ const Home = () => {
           <div className='tit col-span-2'>
             <h3 className='pb-3'>Tech Stack</h3>
             <div className='flex-wrap flex m-auto gap-2'>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faJsSquare} size="lg"/>&nbsp;&nbsp;JavaScript</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faReact} size="lg" />&nbsp;&nbsp;React</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faPython} size="lg" />&nbsp;&nbsp;Python</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;&nbsp;NodeJS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faE} size="lg" />&nbsp;&nbsp;Express</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDatabase} size="lg" />&nbsp;&nbsp;MongoDB</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faJava} size="lg" />&nbsp;&nbsp;Java</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faHtml5} size="lg" />&nbsp;&nbsp;HTML</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faCss3} size="lg" />&nbsp;&nbsp;CSS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faAws} size="lg" />&nbsp;&nbsp;AWS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDigitalOcean} size="lg" />&nbsp;&nbsp;Digital Ocean</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faGit} size="lg" />&nbsp;&nbsp;Git</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faChartLine} size="lg" />&nbsp;&nbsp;Matlab</p>
-              </div>
+              {fullstack.map((fullstack, index) => (
+                <Code key={fullstack.language} language={fullstack.language}/>
+              ))}
             </div>
           </div>
         </div>
@@ -154,82 +84,13 @@ const Home = () => {
           <h2>Work Experience</h2>
         </div>
         <div className='max-w-[800px] m-auto pb-16'>
-        <div className='tit smol col-span-3 items-center'>
-        <h3>Manitoulin Transport</h3>
-        <h4>Web and Mobile Development Intern</h4>
-            <div className='divider w-full h-[1px] pb-3'></div>
-        <ul>
-        <li className='flex items-center mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
-        <li className='flex items-center mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
-        <li className='flex items-center mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className=''/><p>currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p> </li>
-       </ul>
-        <h5 className='py-3'>Tech Stack</h5>
-            <div className='flex-wrap flex m-auto gap-2'>
-            <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faVuejs} size="lg" />&nbsp;&nbsp;VueJS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faJsSquare} size="lg"/>&nbsp;&nbsp;JavaScript</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faNodeJs} size="lg" />&nbsp;&nbsp;NodeJS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faDatabase} size="lg" />&nbsp;&nbsp;mySQL</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faHtml5} size="sm" />&nbsp;&nbsp;HTML</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faCss3} size="sm" />&nbsp;&nbsp;CSS</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faJira} size="sm" />&nbsp;&nbsp;Jira</p>
-              </div>
-              <div className='relative butt'>
-                <div className='border1'></div>
-                <div className='border2'></div>
-                <p className='buttcode'><FontAwesomeIcon icon={faGit} size="sm" />&nbsp;&nbsp;Git</p>
-              </div>
-            </div>
-        </div> </div>
-        <div className='max-w-[800px] m-auto pb-16'>
-        <div className='tit smol col-span-3 items-center'>
-            <h3>York Gaming & Esports Website</h3>
-            <div className='divider w-full h-[1px]'></div></div>
-        <ul>
-        <li>- hi</li>
-        <li>- hi</li>
-        <li>- hi</li>
-        </ul>
-        </div>
-        <div className='max-w-[800px] m-auto'>
-        <div className='tit smol col-span-3 items-center'>
-            <h3>York Gaming & Esports Website</h3>
-            <div className='divider w-full h-[1px]'></div></div>
-        <ul>
-        <li>- hi</li>
-        <li>- hi</li>
-        <li>- hi</li>
-        </ul>
-        </div>
+        {works.map((work, index) => (
+          <Work key={work.id} company={work.company} position={work.position} points={work.points} techstack={work.techstack} className={`${index < (Object.keys(works).length - 1) ? 'pb-16' : ''}`}/>
+        ))}
+         </div>
       </div>
       <div className='divider w-1/3 h-[1px] m-auto mb-4'></div>
-      <div className='max-w-[1000px] m-auto justify-self-auto text-left items-center pt-10 pb-24'>
+      <div className='max-w-[1000px] m-auto justify-self-auto text-left items-center pt-10 pb-24' id="about">
         <div className='text-center tit pb-10'>
           <h2>My Projects and Work</h2>
         </div>
