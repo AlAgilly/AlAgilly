@@ -8,7 +8,7 @@ import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faC
 import HoverImage from '../components/HoverImage'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import Projects from '../components/Projects'
-import { fullstack, projects, works } from '../constants'
+import { fullstack, project, works } from '../constants'
 import Code from '../components/Code'
 import Work from '../components/Work'
 import Navbar from '../components/Navbar'
@@ -29,15 +29,15 @@ const Home = () => {
   return (
     <div className='App'>
       <Navbar/>
-      <div className='max-w-[1000px] m-auto justify-self-auto text-center items-center pt-20 pb-24'>
-        <h1 className='text-[70px] font-thin'>Lynn Al Agilly</h1>
+      <div className='max-w-[1000px] m-auto justify-self-auto text-center items-center pt-20 pb-24 px-10'>
+        <h1 className='text-[70px] font-thin'>Lynn Al&nbsp;Agilly</h1>
         <h3 className='pt-3'>Space Engineering Student | Web Developer</h3>
-        <div className='grid grid-cols-3 mm:w-1/3 w-1/2 m-auto items-center pt-2'>
+        <div className='grid grid-cols-3 sm:w-1/2 w-full m-auto items-center pt-2'>
           <a href="" className='m-auto link2'>Github</a>
           <a href="" className='m-auto link2'>LinkedIn</a>
           <a href="" className='m-auto link2'>Email</a>
         </div>
-        <div className='grid grid-cols-2 w-1/2 m-auto gap-8 pt-8'>
+        <div className='grid xs:grid-cols-2 grid-cols-1 sm:w-1/2 w-full m-auto gap-8 pt-8'>
           <a href='#' className='w-full relative butt buttb'>
             <div className='border1'></div>
             <div className='border2'></div>
@@ -76,7 +76,7 @@ const Home = () => {
             <div className='divider w-full h-[1px] pb-3'></div>
         <ul>
         <h5>Relevent Courses:</h5>
-              <div className='grid grid-cols-1 sm:grid-cols-2 mm:grid-cols-3'>
+              <div className='grid grid-cols-1 ss:grid-cols-2 mm:grid-cols-3'>
               <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computer s</p></li>  
               <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computers</p></li>  
               <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computers</p></li>  
@@ -97,9 +97,9 @@ const Home = () => {
       </Section>
       <Section title="Projects & Work" id="projects">
 
-        <div className='m-auto grid sm:grid-cols-5 grid-cols-1 sm:gap-10 items-center py-12'>
-        {projects.map((projects, index) => (
-          <Projects key={projects.id} title={projects.title} description={projects.description} techstack={projects.techstack} picture={projects.picture} outline={projects.outline} live={projects.live} code={projects.code} documentation={projects.documentation}/>
+        <div className=' max-w-[1000px] m-auto grid sm:grid-cols-5 grid-cols-1 sm:gap-10 items-center pt-12'>
+        {project.map((projects, index) => (
+          <Projects key={projects.id} title={projects.title} description={projects.description} techstack={projects.techstack} picture={projects.picture} outline={projects.outline} live={projects.live} code={projects.code} documentation={projects.documentation} className={`${index < (Object.keys(project).length - 1) ? 'my-3' : 'my-3'}`}/>
         ))}
         </div>
         <div className='text-center tit py-12'>

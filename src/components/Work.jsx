@@ -8,7 +8,6 @@ import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faC
 import HoverImage from '../components/HoverImage'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import Projects from '../components/Projects'
-import { fullstack, projects } from '../constants'
 import Code from '../components/Code'
 import Points from './Points'
 

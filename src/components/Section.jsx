@@ -9,7 +9,7 @@ const Section = ({
   return (
     <>
         <Divider />
-        <div className='max-w-[1000px] m-auto justify-self-auto text-left items-center px-10' id={id}>
+        <div className='m-auto justify-self-auto text-left items-center px-10' id={id}>
             <div className='text-center tit'>
                 <h2>{title}</h2>
             </div>

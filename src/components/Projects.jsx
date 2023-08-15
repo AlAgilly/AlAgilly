@@ -13,7 +13,8 @@ const Projects = ({
   outline,
   live,
   code,
-  documentation
+  documentation,
+  className,
 }) => {
   return (
     <>
@@ -23,7 +24,7 @@ const Projects = ({
           <img src={outline} alt="" className='im1'/>
         </div>
       </div>
-      <div className='tit smol col-span-3 items-center'>
+      <div className={`tit smol col-span-3 items-center ${className}`}>
         <h3>{ title }</h3>
         <div className='divider w-full h-[1px]'></div>
         <p className='py-3 text-[15px]'>{ description }</p>

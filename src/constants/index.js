@@ -135,7 +135,7 @@ export const fullstack =[
     language: 'Linux',
   },
 ]
-export const projects = [
+export const project = [
   {
     id: "yorkesports",
     picture: screenshot1,
