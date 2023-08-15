@@ -4,10 +4,17 @@ export const works = [
   {
     id: "manitoulin",
     company: "Manitoulin Transport",
+    link: 'https://manitoulintransport.com/',
     position: 'Web and Mobile Development Intern',
     points: [
       {
-        description: '',
+        description: 'Transformed outdated Python app into a modern Vue.js application, MTDirect, streamlining internal scheduling and client shipment tracking.',
+      },
+      {
+        description: 'Collaborated within an agile team, contributing to daily standups and seamless project management with Jira and GitHub.',
+      },
+      {
+        description: 'Conducted comprehensive testing efforts on multiple pages, validating their performance and responsiveness.',
       }
     ],
     techstack: [
@@ -39,18 +46,19 @@ export const works = [
   },
   {
     id: "swiftracks",
-    company: "SwiftRacks",
+    company: "Swift Racks",
+    link: 'https://swiftracks.com/',
     position: 'DevOps Engineer',
     points: [
       {
-        description: 'HelloHelloHell oHelloHelloHelloHelloHelloHelloHello He  l l o Hell o  Hel loHell o H el lo  v H ello  Hel lo H ell o Hel lo He llo  vv   Hell oHell o v H elloH ello  Hel loHello Hello Hell oHello Hello HelloHel loHello Hello Hel loHello  HelloH',
+        description: 'swiftrackclients',
       },
       {
-        description: 'Hello',
+        description: 'Designed and implemented cost-effective and scalable AWS server architectures, reducing hosting costs without compromising quality.',
       },
       {
-        description: 'Hello',
-      }
+        description: 'Optimized server-side load speeds, boosting overall website performance and user experience.',
+      },
     ],
     techstack: [
       {
@@ -171,11 +179,11 @@ export const projects = [
     documentation: 'yorkesports',
   },
   {
-    id: "yorkesports2",
+    id: "spotify",
     picture: screenshot3,
     outline: screenshot4,
-    title: "York Gaming & Esports Website",
-    description: "This website was created for my school's gaming and esports club. It functions as a centralized platform to view events, team/player details, and other ways to get involved with the club; all seamlessly synced and updated directly from the club's Notion workspace.",
+    title: "Spotify Clone",
+    description: "This app replicates Spotify's full range of features, providing a seamless music streaming experience with an extensive track collection and personalized playlists. This fully responsive web app elegantly unifies your musical journey across devices. Capturing the essence of Spotify, it transforms music discovery and enjoyment by encapsulating its celebrated features.",
     techstack: [
       {
         language: 'JavaScript',

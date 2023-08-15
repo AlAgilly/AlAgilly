@@ -17,7 +17,7 @@ const Projects = ({
 }) => {
   return (
     <>
-      <div className='mm:col-span-2 col-span-1 '>
+      <div className='sm:col-span-2 col-span-1 '>
         <div className='relative butti m-auto w-full'>
           <img src={picture} alt="" className='im2'/>
           <img src={outline} alt="" className='im1'/>
@@ -33,10 +33,10 @@ const Projects = ({
           <Code key={index} language={techstack.language}/>
         ))}
         </div>
-        <div className='flex my-3'>
-          <div className={`${live ? 'block' : 'hidden'}`}><FontAwesomeIcon icon={faLink} size="sm" /><a href={live} rel="noreferrer" target='_blank' className='link mr-5 ml-2'>See Live</a>|</div>
-          <div className={`${code ? 'block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm" className='ml-5'/><a href={code} className='link mr-5 ml-2'>Source Code</a>|</div>
-          <div className={`${documentation ? 'block' : 'hidden'}`}><FontAwesomeIcon icon={faFileLines} size="sm" className='ml-5'/><Link to={documentation} className='link mr-5 ml-2'>Documentation</Link></div>
+        <div className='flex flex-col xs:flex-row my-3'>
+          <div className={`${live ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faLink} size="sm" /><a href={live} rel="noreferrer" target='_blank' className='link ml-2'>Live Preview</a><span className='xs:inline hidden mx-2 mm:mx-5'>|</span></div>
+          <div className={`${code ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm"/><a href={code} className='link ml-2'>Code</a><span className='xs:inline hidden mx-2 mm:mx-5'>|</span></div>
+          <div className={`${documentation ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faFileLines} size="sm"/><Link to={documentation} className='link ml-2'>Documentation</Link></div>
         </div>
       </div>
     </>

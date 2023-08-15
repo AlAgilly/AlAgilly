@@ -18,10 +18,11 @@ const Work = ({
   position,
   techstack,
   className,
+  link,
 }) => {
   return (
     <div className={`tit smol col-span-3 items-center ${className}`}>
-      <h3>{company}</h3>
+      <h3>{company} <a href={link} target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faArrowUpRightFromSquare} size='2xs'/></a></h3>
       <div className='grid grid-cols-3'>
         <h4 className='col-span-2'>{position}</h4>
         {/* <h5 className='justify-end text-right'>January 2020 - March 2020</h5> */}

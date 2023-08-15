@@ -10,10 +10,9 @@ function App() {
   return (
 
     <>
-<Router>
-<Home />
-
-</Router>
+      <Router>
+        <Home />
+      </Router>
     </>
   )
 }
