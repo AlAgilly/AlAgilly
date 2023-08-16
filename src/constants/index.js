@@ -8,7 +8,7 @@ export const works = [
     position: 'Web and Mobile Development Intern',
     points: [
       {
-        description: 'Transformed outdated Python app into a modern Vue.js application, MTDirect, streamlining internal scheduling and client shipment tracking.',
+        description: 'Transformed a legacy Python application, MTDirect, into a modern Vue.js application, MTDirect2, streamlining internal scheduling, client shipment tracking, and everything in between.',
       },
       {
         description: 'Collaborated within an agile team, contributing to daily standups and seamless project management with Jira and GitHub.',
@@ -183,7 +183,7 @@ export const project = [
     picture: screenshot3,
     outline: screenshot4,
     title: "Spotify Clone",
-    description: "This app replicates Spotify's full range of features, providing a seamless music streaming experience with an extensive track collection and personalized playlists. This fully responsive web app elegantly unifies your musical journey across devices. Capturing the essence of Spotify, it transforms music discovery and enjoyment by encapsulating its celebrated features.",
+    description: "This app replicates Spotify's full range of features, providing a seamless music streaming experience with an extensive track collection and personalized playlists. This fully responsive web app lets you enjoy music across devices, wherever you are.",
     techstack: [
       {
         language: 'JavaScript',
