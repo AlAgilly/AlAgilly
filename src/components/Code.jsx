@@ -63,6 +63,9 @@ const Code = ({
         case 'Linux':
             icon = faLinux;
             break;
+        case 'Typescript':
+            icon = faJsSquare;
+            break;
         default:
             icon = language.includes('API') ? faArrowUpRightFromSquare : '';
 

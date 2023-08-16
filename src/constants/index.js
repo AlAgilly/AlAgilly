@@ -134,6 +134,9 @@ export const fullstack =[
   {
     language: 'Linux',
   },
+  {
+    language: 'Typescript',
+  },
 ]
 export const project = [
   {
