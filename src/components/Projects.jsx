@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,8 +36,8 @@ const Projects = ({
         ))}
         </div>
         <div className='flex flex-col xs:flex-row my-3'>
-          <div className={`${live ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faLink} size="sm" /><a href={live} rel="noreferrer" target='_blank' className='link ml-2'>Live Preview</a><span className='xs:inline hidden mx-2 mm:mx-5'>|</span></div>
-          <div className={`${code ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm"/><a href={code} className='link ml-2'>Code</a><span className='xs:inline hidden mx-2 mm:mx-5'>|</span></div>
+          <div className={`${live ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faLink} size="sm" /><a href={live} rel="noreferrer" target='_blank' className='link ml-2'>Live Preview</a><span className={`${documentation ? 'xs:inline hidden mx-2 mm:mx-5' : (code ? 'xs:inline hidden mx-2 mm:mx-5' : 'hidden')}`}>|</span></div>
+          <div className={`${code ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm"/><a href={code} className='link ml-2'>Code</a><span className={`${documentation ? 'xs:inline hidden mx-2 mm:mx-5' : 'hidden'}`}>|</span></div>
           <div className={`${documentation ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faFileLines} size="sm"/><Link to={documentation} className='link ml-2'>Documentation</Link></div>
         </div>
       </div>

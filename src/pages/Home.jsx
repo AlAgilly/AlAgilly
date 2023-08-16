@@ -29,15 +29,15 @@ const Home = () => {
   return (
     <div className='App'>
       <Navbar/>
-      <div className='max-w-[1000px] m-auto justify-self-auto text-center items-center pt-20 pb-24 px-10'>
+      <div className='max-w-[1000px] m-auto justify-self-auto text-center items-center pt-20 pb-24 xs:px-10 px-4'>
         <h1 className='text-[70px] font-thin'>Lynn Al&nbsp;Agilly</h1>
         <h3 className='pt-3'>Space Engineering Student | Web Developer</h3>
-        <div className='grid grid-cols-3 sm:w-1/2 w-full m-auto items-center pt-2'>
+        <div className='grid grid-cols-3 xm:w-1/2 w-full m-auto items-center pt-2'>
           <a href="" className='m-auto link2'>Github</a>
           <a href="" className='m-auto link2'>LinkedIn</a>
           <a href="" className='m-auto link2'>Email</a>
         </div>
-        <div className='grid xs:grid-cols-2 grid-cols-1 sm:w-1/2 w-full m-auto gap-8 pt-8'>
+        <div className='grid xs:grid-cols-2 grid-cols-1 xm:w-1/2 w-full m-auto gap-6 pt-8'>
           <a href='#' className='w-full relative butt buttb'>
             <div className='border1'></div>
             <div className='border2'></div>
@@ -51,15 +51,15 @@ const Home = () => {
         </div>
       </div>
       <Section title="About" id="about">
-        <div className='max-w-[1000px] m-auto grid sm:grid-cols-5 grid-cols-1 sm:gap-10 py-12'>
-          <div className='col-span-1 sm:col-span-3'>
+        <div className='max-w-[1000px] m-auto grid mm:grid-cols-5 sm:grid-cols-2 grid-cols-1 sm:gap-10 py-12 items-center'>
+          <div className='col-span-1 mm:col-span-3'>
             <p className='pb-3'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
             <p className='pb-3'>I have a huge passion for learning new skills; from unfamiliar programming languages to all things space & aviation; and on my off time, I stream on <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/alagilly" className='link  text-[#000] font-medium'>Twitch</a>!</p>
-            <p className='pb-3'>I&apos;m available for freelance work and am constantly looking for interesting & meaningful projects to take on. Feel free to <a href="#contact"  className='link  text-[#000] font-medium' id="nav-contact2">shoot me a message</a> if you have any questions and/or opportunities or even just to say hi! </p>
+            <p className=''>I&apos;m available for freelance work and am constantly looking for interesting & meaningful projects to take on. Feel free to <a href="#contact"  className='link  text-[#000] font-medium' id="nav-contact2">shoot me a message</a> if you have any questions and/or opportunities or even just to say hi! </p>
           </div>
-          <div className='tit col-span-2'>
+          <div className='tit mm:col-span-2 col-span-1'>
             <h3 className='pb-3'>Tech Stack</h3>
-            <div className='flex-wrap flex m-auto gap-2'>
+            <div className='flex-wrap flex m-auto gap-2 pb-3'>
               {fullstack.map((fullstack, index) => (
                 <Code key={fullstack.language} language={fullstack.language}/>
               ))}
@@ -72,16 +72,18 @@ const Home = () => {
         <div className={`tit smol col-span-3 items-center `}>
       <h3>York University <a href='https://yorku.ca' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faArrowUpRightFromSquare} size='2xs'/></a></h3>
         <h4 className='col-span-2'>Space Engineering (BEng Hons.)</h4>
-        {/* <h5 className='justify-end text-right'>January 2020 - March 2020</h5> */}
             <div className='divider w-full h-[1px] pb-3'></div>
         <ul>
         <h5>Relevent Courses:</h5>
-              <div className='grid grid-cols-1 ss:grid-cols-2 mm:grid-cols-3'>
-              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computer s</p></li>  
-              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computers</p></li>  
-              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computers</p></li>  
-              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Computers</p></li>  
-
+              <div className='grid grid-cols-1 sm:grid-cols-2'>
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Computational Thinking</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Object Oriented Programming</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Software Development Project</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Introduction to Embedded Systems</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Advanced Object Oriented Programming</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Computer Organization</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Operating System Fundamentals</p></li>  
+              <li className='flex items-start mb-1'><FontAwesomeIcon icon={faArrowRight} size="sm"  className='pt-[5px]'/><p>Intro. to Logic for Computer Science</p></li>  
               </div>
 
        </ul>
@@ -108,7 +110,7 @@ const Home = () => {
     </Section>
     <Section title="Contact" id="work">
 
-    <div className='m-auto grid sm:grid-cols-3 grid-cols-1 sm:gap-10 items-center pt-12 pb-20'>
+    <div className='max-w-[800px] m-auto grid sm:grid-cols-3 grid-cols-1 sm:gap-10 items-center pt-12 pb-20 text-center'>
         {/* <div className='col-span-3 justify-start'>
         <form className='grid grid-cols-1 justify-start'>
           <label className='w-full buttf relative my-2'>

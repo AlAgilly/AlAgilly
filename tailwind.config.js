@@ -24,7 +24,7 @@ export default {
       ss: "620px",
       sm: "882px",
       xm: "844px",
-      mm: "1060px",
+      mm: "1066px",
       me: "1155px",
       lg: "1200px",
       xl: "1700px",
