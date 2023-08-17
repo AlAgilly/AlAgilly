@@ -1,12 +1,10 @@
 import React from 'react'
-import { github, screenshot1, screenshot2, screenshot3, screenshot4 } from '../assets'
+import { github, screenshot1, yorkb, yorkw, screenshot3, spotifyb, spotifyw } from '../assets'
 import {Link, NavLink, useLocation} from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter, faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNode, faNodeJs, faAws, faDigitalOcean, faVuejs, faJira } from '@fortawesome/free-brands-svg-icons'
 import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare, faCutlery, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import HoverImage from '../components/HoverImage'
-import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import Projects from '../components/Projects'
 import { fullstack, project, works } from '../constants'
 import Code from '../components/Code'
@@ -99,7 +97,7 @@ const Home = () => {
 
         <div className=' max-w-[1000px] m-auto grid sm:grid-cols-5 grid-cols-1 sm:gap-10 items-center pt-12'>
         {project.map((projects, index) => (
-          <Projects key={projects.id} title={projects.title} description={projects.description} techstack={projects.techstack} picture={projects.picture} outline={projects.outline} live={projects.live} code={projects.code} documentation={projects.documentation} className={`${index < (Object.keys(project).length - 1) ? 'my-3' : 'my-3'}`}/>
+          <Projects key={projects.id} title={projects.title} description={projects.description} techstack={projects.techstack} picture={projects.picture} outlineb={projects.outlineb} outlinew={projects.outlinew} live={projects.live} code={projects.code} documentation={projects.documentation} className={`${index < (Object.keys(project).length - 1) ? 'my-3' : 'my-3'}`}/>
         ))}
         </div>
         <div className='text-center tit py-12'>

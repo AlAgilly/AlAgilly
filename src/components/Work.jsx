@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import { github, screenshot1, screenshot2, screenshot3, screenshot4 } from '../assets'
 import {Link, NavLink, useLocation} from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
