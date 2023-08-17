@@ -5,7 +5,7 @@ import {Link, NavLink} from 'react-router-dom'
 // if(toggleSwitch) {
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-document.documentElement.setAttribute('data-theme', 'dark');
+// document.documentElement.setAttribute('data-theme', 'dark');
 
 function switchTheme(e) {
     if (e.target.checked) {
