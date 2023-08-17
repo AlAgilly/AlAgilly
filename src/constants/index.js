@@ -28,7 +28,7 @@ export const works = [
         language: 'NodeJS',
       },
       {
-        language: 'MySQL',
+        language: 'mySQL',
       },
       {
         language: 'HTML',

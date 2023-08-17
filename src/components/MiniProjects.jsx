@@ -6,7 +6,7 @@ import { faLink, faCode } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import Code from './Code'
 
-const Projects = ({
+const MiniProjects = ({
   title,
   description,
   techstack,
@@ -47,4 +47,4 @@ const Projects = ({
   )
 }
 
-export default Projects
+export default MiniProjects

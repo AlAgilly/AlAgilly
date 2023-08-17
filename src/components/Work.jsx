@@ -7,7 +7,7 @@ import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, fa
 import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare, faCutlery, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import HoverImage from '../components/HoverImage'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
-import Projects from '../components/Projects'
+import MiniProjects from './MiniProjects'
 import Code from '../components/Code'
 import Points from './Points'
 

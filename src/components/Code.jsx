@@ -54,7 +54,7 @@ const Code = ({
         case 'Jira':
             icon = faJira;
             break;
-        case 'MySQL':
+        case 'mySQL':
             icon = faDatabase;
             break;
         case 'VueJS':

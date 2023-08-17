@@ -256,6 +256,10 @@ cursor: default;
 .divider {
   border-top: 1px solid var(--secondary);
 }
+.secdivider {
+  border-bottom: 1px solid var(--secondary);
+  padding-top: 100px;
+}
 .link:hover {
   border-bottom: 1px solid var(--secondary);
   padding-bottom: 4px;
@@ -269,6 +273,7 @@ cursor: default;
 }
 .link2:hover {
   border-bottom: 1px solid var(--secondary);
+  cursor: pointer;
 }
 .link2 {
   border-bottom: 1px solid #00000000;

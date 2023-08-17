@@ -4,7 +4,7 @@ import {Link, NavLink, useLocation} from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faGithub, faLinkedin, faLinkedinIn, faSquareTwitter, faTwitter, faJsSquare, faJava, faHtml5, faCss3, faPython, faLinux, faGit, faReact, faNode, faNodeJs, faAws, faDigitalOcean, faVuejs, faJira } from '@fortawesome/free-brands-svg-icons'
-import { faSquareEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare, faCutlery, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faSquareEnvelope, faEnvelope, faE, faChartLine, faDatabase, faLink, faCode, faInfo, faBook, faFile, faFileAlt, faArrowUpRightFromSquare, faCutlery, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import MiniProjects from '../components/MiniProjects'
 import { fullstack, project, works } from '../constants'
 import Code from '../components/Code'
@@ -13,9 +13,8 @@ import Navbar from '../components/Navbar'
 import Divider from '../components/Divider'
 import Section from '../components/Section'
 import { useRef } from 'react'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
-const Home = () => {
+const Projects = () => {
     // Mobile nav toggle
     const [toggle, setToggle] = useState(false)
     //assigning location variable
@@ -62,15 +61,15 @@ const Home = () => {
         <h1 className='text-[70px] font-thin'>Lynn Al&nbsp;Agilly</h1>
         <h3 className='pt-3'>Space Engineering Student | Web Developer</h3>
         <div className='grid grid-cols-3 xm:w-1/2 w-full m-auto items-center pt-2'>
-          <a href="https://github.com/AlAgilly" className='m-auto link2'>Github</a>
+          <a href="" className='m-auto link2'>Github</a>
           <a href="" className='m-auto link2'>LinkedIn</a>
-          <a href="mailto:lynn.alagilly@yahoo.ca" className='m-auto link2'>Email</a>
+          <a href="" className='m-auto link2'>Email</a>
         </div>
         <div className='grid xs:grid-cols-2 grid-cols-1 xm:w-1/2 w-full m-auto gap-6 pt-8'>
-          <a data-target="projects2" className="btn-scroll-into w-full relative butt buttb">
+          <a href='#' className='w-full relative butt buttb'>
             <div className='border1'></div>
             <div className='border2'></div>
-            <h5 data-target="projects2" className="btn-scroll-into">View All Projects</h5>
+            <h5>View Projects</h5>
           </a>
           <a href='#' className='w-full relative butt buttb'>
             <div className='border1'></div>
@@ -79,7 +78,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]' id="about"></div>
+      <div className='secdivider divider w-1/3 h-[1px] m-auto mb-[100px]' id="about"></div>
         <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
                 <h2>About</h2>
@@ -100,7 +99,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]' id="projects"></div>
+      <div className='secdivider divider w-1/3 h-[1px] m-auto mb-[100px]' id="projects"></div>
         <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
                 <h2>Projects</h2>
@@ -115,7 +114,7 @@ const Home = () => {
         </div>
         </div>
 
-      <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]'></div>
+      <div className='secdivider divider w-1/3 h-[1px] m-auto mb-[100px]'></div>
       <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
                 <h2>Education</h2>
@@ -142,7 +141,7 @@ const Home = () => {
         </div>
         </div>
         </div>
-        <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]' id="work"></div>
+        <div className='secdivider divider w-1/3 h-[1px] m-auto mb-[100px]' id="work"></div>
         <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
                 <h2>Work Experience</h2>
@@ -153,39 +152,13 @@ const Home = () => {
           ))}
         </div>
         </div>
-        <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]' id="contact"></div>
+        <div className='secdivider divider w-1/3 h-[1px] m-auto mb-[100px]' id="contact"></div>
         <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
-                <h2>Contact</h2>
+                <h2>About</h2>
             </div>
           <div className='max-w-[1000px] m-auto grid mm:grid-cols-5 sm:grid-cols-2 grid-cols-1 sm:gap-10 pt-12 items-center'>
-          <div className='col-span-1 mm:col-span-3'>
-
-          </div>
-          <div className='tit mm:col-span-2 col-span-1'>
-            <h3 className='pb-3'>Connect with Me</h3>
-            <div className='flex-wrap flex m-auto gap-2 pb-3'>
-              
-            <a href='#' className='relative butt buttb'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <h5><FontAwesomeIcon icon={faLinkedinIn} size={`lg`}/>&nbsp;&nbsp;LinkedIn</h5>
-          </a>
-          <a href='https://github.com/AlAgilly' className='relative butt buttb'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <h5><FontAwesomeIcon icon={faGithub} size={`lg`}/>&nbsp;&nbsp;Github</h5>
-          </a>
-          <a href='mailto:lynn.alagilly@yahoo.ca' className='relative butt buttb'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <h5><FontAwesomeIcon icon={faEnvelope} size={`md`}/>&nbsp;&nbsp;Email</h5>
-          </a>
-
-            </div>
-          </div>
-        </div>
-      </div>        {/* <div className='col-span-3 justify-start'>
+          <div className='col-span-1 mm:col-span-3'>        {/* <div className='col-span-3 justify-start'>
         <form className='grid grid-cols-1 justify-start'>
           <label className='w-full buttf relative my-2'>
             <div className='border1'></div>
@@ -204,6 +177,36 @@ const Home = () => {
          </div>
         </form>
         </div> */}
+
+            <p className='pb-3'>Hello, I&apos;m Lynn - an aspiring Full-Stack Web Developer. Im a software engineering student at <a target="_blank" rel="noreferrer" href="https://www.yorku.ca/index.html" className='link  text-[#000] font-medium'>York University</a>, currently working as a DevOps Engineer at <a target="_blank" rel="noreferrer" href="https://swiftracks.com" className='link text-[#000] font-medium'>SwiftRacks</a>. I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. </p>
+            <p className='pb-3'>I have a huge passion for learning new skills; from unfamiliar programming languages to all things space & aviation; and on my off time, I stream on <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/alagilly" className='link  text-[#000] font-medium'>Twitch</a>!</p>
+            <p className=''>I&apos;m available for freelance work and am constantly looking for interesting & meaningful projects to take on. Feel free to <a href="#contact"  className='link  text-[#000] font-medium' id="nav-contact2">shoot me a message</a> if you have any questions and/or opportunities or even just to say hi! </p>
+          </div>
+          <div className='tit mm:col-span-2 col-span-1'>
+            <h3 className='pb-3'>Tech Stack</h3>
+            <div className='flex-wrap flex m-auto gap-2 pb-3'>
+              {fullstack.map((fullstack, index) => (
+                <Code key={fullstack.language} language={fullstack.language}/>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className='relative butt'>
+        <div className='border1'></div>
+            <div className='border2'></div>
+          <h4>Connect with me!</h4>
+        </div>
+        <div className='relative butt'>
+        <div className='border1'></div>
+            <div className='border2'></div>
+          Email Me!
+        </div>
+        <div className='relative butt'>
+        <div className='border1'></div>
+            <div className='border2'></div>
+          hello
+        </div>
       <nav className='m-auto justify-self-auto text-center py-5 w-full flex justify-end items-center'>
       <p className='items-center font-light text-[#000] pl-20'>Made and designed with ♡ by <Link to="/" className='font-medium'>Lynn Al Agilly</Link></p>
       <div className='list-none xm:flex hidden justify-end items-center flex-1 gap-7 pr-20 fott'>
@@ -215,4 +218,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Projects
