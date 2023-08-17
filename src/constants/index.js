@@ -1,4 +1,4 @@
-import { screenshot1, screenshot2, screenshot3, screenshot4 } from '../assets'
+import { screenshot1, yorkb, yorkw, screenshot3, spotifyb, spotifyw } from '../assets'
 
 export const works = [
   {
@@ -142,7 +142,8 @@ export const project = [
   {
     id: "yorkesports",
     picture: screenshot1,
-    outline: screenshot2,
+    outlineb: yorkb,
+    outlinew: yorkw, 
     title: "York Gaming & Esports Website",
     description: "This website was created for my school's gaming and esports club. It functions as a centralized platform to view events, team/player details, and other ways to get involved with the club; all seamlessly synced and updated directly from the club's Notion workspace.",
     techstack: [
@@ -184,7 +185,8 @@ export const project = [
   {
     id: "spotify",
     picture: screenshot3,
-    outline: screenshot4,
+    outlineb: spotifyb,
+    outlinew: spotifyw,
     title: "Spotify Clone",
     description: "This app replicates Spotify's full range of features, providing a seamless music streaming experience with an extensive track collection and personalized playlists. This fully responsive web app lets you enjoy music across devices, wherever you are.",
     techstack: [
@@ -226,7 +228,7 @@ export const project = [
   {
     id: "yorkesports3",
     picture: screenshot1,
-    outline: screenshot2,
+    outlineb: yorkb,
     title: "York Gaming & Esports Website",
     description: "This website was created for my school's gaming and esports club. It functions as a centralized platform to view events, team/player details, and other ways to get involved with the club; all seamlessly synced and updated directly from the club's Notion workspace.",
     techstack: [

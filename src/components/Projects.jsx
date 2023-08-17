@@ -11,7 +11,8 @@ const Projects = ({
   description,
   techstack,
   picture,
-  outline,
+  outlineb,
+  outlinew,
   live,
   code,
   documentation,
@@ -22,7 +23,8 @@ const Projects = ({
       <div className='sm:col-span-2 col-span-1 '>
         <div className='relative butti m-auto w-full'>
           <img src={picture} alt="" className='im2'/>
-          <img src={outline} alt="" className='im1'/>
+          <img src={outlineb} alt="" className='im1b'/>
+          <img src={outlinew} alt="" className='im1w'/>
         </div>
       </div>
       <div className={`tit smol col-span-3 items-center ${className}`}>
