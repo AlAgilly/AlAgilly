@@ -8,19 +8,17 @@
   /* --blue: #0572c9;
   --midblue: #045CB7;
   --darkblue: #023294; */
-  --primary: #fff;
+  --primary: #ffffff;
   --secondary: #000;
   --grid:  url(assets/grid.png);
   --imgblack: 100%;
   --imgwhite: 0px;
-}
 
-[data-theme="dark"] {
-  --primary: #40497e;
-  --secondary: #eee;
+  /* --primary: #40497e;
+  --secondary: #fff;
   --grid:  url(assets/gridr.png);
   --imgblack: 0px;
-  --imgwhite: 100%;
+  --imgwhite: 100%; */
 }
 
 * {
@@ -37,11 +35,13 @@ body {
   background-color: var(--primary);
   /* background-color: #fff; */
   transition: 0.3s ease-in-out;
+  background-image: var(--grid);
+
 }
 
 /* Home */
 .App {
-  background-image: var(--grid);
+  /* background-image: var(--grid); */
   transition: 0.3s ease-in-out;
 
 }
@@ -56,6 +56,9 @@ p, h1, h2, h3, h4, h5, .divider {
   transition: 0.3s ease-in-out;
 
   
+}
+.lefty {
+  border-right: 1px solid var(--secondary)
 }
 .activenav{
     border-bottom: 1px solid var(--secondary);
@@ -419,4 +422,7 @@ input, textarea{
 }
 .buttb:hover {
 cursor: pointer;
+}
+textarea {
+  resize: none;
 }

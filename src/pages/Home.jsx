@@ -14,6 +14,7 @@ import Divider from '../components/Divider'
 import Section from '../components/Section'
 import { useRef } from 'react'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { useEffect } from 'react'
 
 const Home = () => {
     // Mobile nav toggle
@@ -40,7 +41,11 @@ const Home = () => {
   
   });
 
-
+  const locationp = useLocation();
+  useEffect(() => {
+    // Scroll top when location changes
+    window.scrollTo(0, 0);
+  }, [locationp]);
   return (
     <div className='App'>
           <nav className='navv m-auto justify-self-auto text-center py-5 sticky top-0 border-b-[1px] border-[#666] z-50 w-full xm:flex justify-end items-center'>
@@ -63,15 +68,15 @@ const Home = () => {
         <h3 className='pt-3'>Space Engineering Student | Web Developer</h3>
         <div className='grid grid-cols-3 xm:w-1/2 w-full m-auto items-center pt-2'>
           <a href="https://github.com/AlAgilly" className='m-auto link2'>Github</a>
-          <a href="" className='m-auto link2'>LinkedIn</a>
+          <a href="https://www.linkedin.com/in/lynnalagilly/" className='m-auto link2'>LinkedIn</a>
           <a href="mailto:lynn.alagilly@yahoo.ca" className='m-auto link2'>Email</a>
         </div>
         <div className='grid xs:grid-cols-2 grid-cols-1 xm:w-1/2 w-full m-auto gap-6 pt-8'>
-          <a data-target="projects2" className="btn-scroll-into w-full relative butt buttb">
+          <Link className="w-full relative butt buttb" to='projects'>
             <div className='border1'></div>
             <div className='border2'></div>
-            <h5 data-target="projects2" className="btn-scroll-into">View All Projects</h5>
-          </a>
+            <h5>View All Projects</h5>
+          </Link>
           <a href='#' className='w-full relative butt buttb'>
             <div className='border1'></div>
             <div className='border2'></div>
@@ -111,7 +116,7 @@ const Home = () => {
         ))}
         </div>
         <div className='text-center tit py-12'>
-          <h3><a href='#' className='link'>View all Projects</a></h3>
+          <h3><Link to='projects' className='link'>View all Projects</Link></h3>
         </div>
         </div>
 
@@ -158,23 +163,45 @@ const Home = () => {
             <div className='text-center tit'>
                 <h2>Contact</h2>
             </div>
-          <div className='max-w-[1000px] m-auto grid mm:grid-cols-5 sm:grid-cols-2 grid-cols-1 sm:gap-10 pt-12 items-center'>
+          <div className='max-w-[1000px] m-auto grid mm:grid-cols-5 sm:grid-cols-2 grid-cols-1 sm:gap-10 pt-12 pb-28 items-start'>
           <div className='col-span-1 mm:col-span-3'>
-
+<div className='justify-end'>
+        <form className='grid grid-cols-1 justify-end'>
+          <label className='w-full buttf relative my-2 p-2'>
+            <div className='border1'></div>
+            <div className='border2'></div>
+            <input type="text" name="name" placeholder='Name' className='appearance-none w-full focus:outline-none'/>
+          </label>
+          <label className='w-full buttf relative my-2 p-2'>
+            <div className='border1'></div>
+            <div className='border2'></div>
+            <input type="email" name="email" placeholder='Email' className='appearance-none w-full focus:outline-none'/>
+          </label>
+          <label className='w-full buttf relative my-2 p-2'>
+            <div className='border1'></div>
+            <div className='border2'></div>
+            <textarea name="text" className="min-h-[100px] appearance-none w-full focus:outline-none" id="message" placeholder="Message"></textarea>
+         </label>
+         <div className='relative buttf ml-auto my-2 px-16 justify-end buttb'>
+         <div className='border1'></div>
+            <div className='border2'></div>
+            <input type="submit" value="Submit"/>
+         </div>
+        </form>
+        </div>
           </div>
           <div className='tit mm:col-span-2 col-span-1'>
             <h3 className='pb-3'>Connect with Me</h3>
             <div className='flex-wrap flex m-auto gap-2 pb-3'>
-              
-            <a href='#' className='relative butt buttb'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <h5><FontAwesomeIcon icon={faLinkedinIn} size={`lg`}/>&nbsp;&nbsp;LinkedIn</h5>
-          </a>
-          <a href='https://github.com/AlAgilly' className='relative butt buttb'>
+            <a href='https://github.com/AlAgilly' className='relative butt buttb'>
             <div className='border1'></div>
             <div className='border2'></div>
             <h5><FontAwesomeIcon icon={faGithub} size={`lg`}/>&nbsp;&nbsp;Github</h5>
+          </a>           
+            <a href='https://www.linkedin.com/in/lynnalagilly/' className='relative butt buttb'>
+            <div className='border1'></div>
+            <div className='border2'></div>
+            <h5><FontAwesomeIcon icon={faLinkedinIn} size={`lg`}/>&nbsp;&nbsp;LinkedIn</h5>
           </a>
           <a href='mailto:lynn.alagilly@yahoo.ca' className='relative butt buttb'>
             <div className='border1'></div>
@@ -185,32 +212,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>        {/* <div className='col-span-3 justify-start'>
-        <form className='grid grid-cols-1 justify-start'>
-          <label className='w-full buttf relative my-2'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <input type="text" name="name" placeholder='Name' className='appearance-none w-full focus:outline-none text-[#000]'/>
-          </label>
-          <label className='w-full buttf relative my-2 min-h-[100px]'>
-            <div className='border1'></div>
-            <div className='border2'></div>
-            <textarea name="text" className="appearance-none w-full focus:outline-none" id="message" placeholder="Message"></textarea>
-         </label>
-         <div className='relative buttf mr-auto px-16 justify-start buttb'>
-         <div className='border1'></div>
-            <div className='border2'></div>
-            <input type="submit" value="Submit"/>
-         </div>
-        </form>
-        </div> */}
-      <nav className='m-auto justify-self-auto text-center py-5 w-full flex justify-end items-center'>
-      <p className='items-center font-light text-[#000] pl-20'>Made and designed with ♡ by <Link to="/" className='font-medium'>Lynn Al Agilly</Link></p>
-      <div className='list-none xm:flex hidden justify-end items-center flex-1 gap-7 pr-20 fott'>
-          <NavLink to="/" className={`link2`}>Terms & Conditions</NavLink>
-          <NavLink to="/" className={`link2`}>Contact</NavLink>
-      </div>
-      </nav>
+      </div> 
     </div>
   )
 }

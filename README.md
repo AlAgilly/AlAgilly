@@ -3,7 +3,7 @@
 <h2>👋&nbsp;Hey there! I'm Lynn, a Full-Stack Developer</h2>
 
 ### 👨🏻‍💻 &nbsp;About Me
-I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. I'm currently a software engineering student at <a target="_blank" href="https://www.yorku.ca/index.html">York University</a>, and most recently worked as a Web and Mobile Development Intern at <a target="_blank" href="https://manitoulintransport.com/">Manitoulin Transport</a>.
+I specialize in creating picture perfect websites and bots to help accomplish everyday tasks. I'm currently a space engineering student at <a target="_blank" href="https://www.yorku.ca/index.html">York University</a>, and most recently worked as a Web and Mobile Development Intern at <a target="_blank" href="https://manitoulintransport.com/">Manitoulin Transport</a>.
 
 I have a huge passion for learning new skills; from unfamiliar programming languages to all things space & aviation; and on my off time, I stream on <a target="_blank" href="https://www.twitch.tv/jellyfashe">Twitch</a>!
 

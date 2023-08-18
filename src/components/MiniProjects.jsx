@@ -21,7 +21,14 @@ const MiniProjects = ({
   return (
     <>
       <div className='sm:col-span-2 col-span-1 '>
+        <a href={live} rel="noreferrer" target='_blank' className={`${live ? 'inline' : 'hidden'}`}>
         <div className='relative butti m-auto w-full'>
+          <img src={picture} alt="" className='im2'/>
+          <img src={outlineb} alt="" className='im1b'/>
+          <img src={outlinew} alt="" className='im1w'/>
+        </div>
+        </a>
+        <div className={`relative butti m-auto w-full ${live ? 'hidden' : 'block'}`}>
           <img src={picture} alt="" className='im2'/>
           <img src={outlineb} alt="" className='im1b'/>
           <img src={outlinew} alt="" className='im1w'/>
@@ -39,8 +46,8 @@ const MiniProjects = ({
         </div>
         <div className='flex flex-col xs:flex-row my-3'>
           <div className={`${live ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faLink} size="sm" /><a href={live} rel="noreferrer" target='_blank' className='link ml-2'>Live Preview</a><span className={`${documentation ? 'xs:inline hidden mx-2 mm:mx-5' : (code ? 'xs:inline hidden mx-2 mm:mx-5' : 'hidden')}`}>|</span></div>
-          <div className={`${code ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm"/><a href={code} className='link ml-2'>Code</a><span className={`${documentation ? 'xs:inline hidden mx-2 mm:mx-5' : 'hidden'}`}>|</span></div>
-          <div className={`${documentation ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faFileLines} size="sm"/><Link to={documentation} className='link ml-2'>Documentation</Link></div>
+          <div className={`${code ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faCode} size="sm"/><a href={code} rel="noreferrer" target='_blank' className='link ml-2'>Code</a><span className={`${documentation ? 'xs:inline hidden mx-2 mm:mx-5' : 'hidden'}`}>|</span></div>
+          <div className={`${documentation ? 'inline-block' : 'hidden'}`}><FontAwesomeIcon icon={faFileLines} size="sm"/><Link to={`/projects/${documentation}`} className='link ml-2'>Documentation</Link></div>
         </div>
       </div>
     </>
