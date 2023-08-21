@@ -4,6 +4,7 @@ import linkedin from './linkedin.png'
 import screenshot1 from './screenshot1.png'
 import yorkb from './yorkb.png'
 import yorkw from './yorkw.png'
+import yorkm from './yorkm.png'
 import screenshot3 from './screenshot3.png'
 import spotifyb from './spotifyb.png'
 import spotifyw from './spotifyw.png'
@@ -17,4 +18,5 @@ export {
   screenshot3,
   spotifyb,
   spotifyw,
+  yorkm,
 };

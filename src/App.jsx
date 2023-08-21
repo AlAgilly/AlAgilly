@@ -1,30 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css'
-// import Home from './pages/Home'
-import Home2 from './pages/Home2'
-import Old from './pages/Old'
-
 import React, { Component } from 'react';
 import { lazy, Suspense } from 'react';
-// import Home from './pages/Home';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Home = lazy(() => import("./pages/Home"))
-// const About = lazy(() => import("./pages/About"))
 const Projects = lazy(() => import("./pages/Projects"))
 const YorkEsports = lazy(() => import("./pages/YorkEsports"))
-// const UnderConstruction = lazy(() => import("./pages/UnderConstruction"))
-// const NotFound = lazy(() => import("./pages/NotFound"))
-// const PastGames = lazy(() => import("./pages/PastGames"))
-// const Footer = lazy(() => import("./components/sections/Footer"))
 
-function App() {
-
+class App extends Component {
+  render(){
   return (
 
     <Router>
-            <Suspense fallback={<h1>Loading...</h1>}>
+            <Suspense fallback={
+            <div className='min-h-[100vh] w-full'>
+              <h1 className='m-auto'>Loading...</h1>
+            </div>
+            }>
 
                 <Routes>
                   {/* Completed Pages */}
@@ -48,6 +42,7 @@ function App() {
       </nav>
     </Router>
   );
+}
 }
 
   
