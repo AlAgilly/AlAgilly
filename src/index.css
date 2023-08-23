@@ -45,6 +45,9 @@ body {
   transition: 0.3s ease-in-out;
 
 }
+.bb {
+  /* border: 1px solid #000; */
+}
 p, h1, h2, h3, h4, h5, .divider {
   transition: 0.3s ease-in-out;
 }
@@ -262,6 +265,48 @@ cursor: default;
 .secdivider {
   border-bottom: 1px solid var(--secondary);
   padding-top: 100px;
+}
+.leftdiv {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  left: 0;
+}
+.leftdiv1 {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+.leftdiv2 {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+.leftdivcont {
+  position: absolute;
+  left: 0;
+}
+.rightdiv {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  right: 0;
+}
+.rightdiv1 {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.rightdiv2 {
+  border-bottom: 1px solid var(--secondary);
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.rightdivcont {
+  position: absolute;
+  right: 0;
 }
 .link:hover {
   border-bottom: 1px solid var(--secondary);

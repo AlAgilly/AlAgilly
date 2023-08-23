@@ -105,7 +105,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='secdivider w-1/3 h-[1px] m-auto mb-[100px]' id="projects"></div>
+            <div className='mb-[100px] m-auto relative'>
+      <div className='secdivider w-1/3 h-[1px] m-auto' id="projects"></div>
+      <div className='leftdivcont w-full h-[10px]'>
+        <div className='leftdiv1 w-[10%] h-[1px] absolute'></div>
+        <div className='leftdiv w-[15%] h-[1px]'></div>
+        <div className='leftdiv2 w-[10%] h-[1px] absolute'></div>
+      </div>
+      <div className='rightdivcont w-full h-[10px]'>
+        <div className='rightdiv1 w-[10%] h-[1px] absolute'></div>
+        <div className='rightdiv w-[15%] h-[1px]'></div>
+        <div className='rightdiv2 w-[10%] h-[1px] absolute'></div>
+      </div>            </div>
         <div className='m-auto justify-self-auto text-left items-center xs:px-10 px-8'>
             <div className='text-center tit'>
                 <h2>Projects</h2>
